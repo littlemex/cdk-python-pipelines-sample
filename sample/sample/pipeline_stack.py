@@ -34,7 +34,7 @@ class PipelineStack(core.Stack):
                 branch='feature/init',
                 oauth_token=self.node.try_get_context("oauth_token"), # FIXME: 後でsecretから取るようにする
                 trigger=codepipeline_actions.GitHubTrigger.POLL,
-                output=source_artifact,
+                output=cloud_assembly_artifact,
             ),
 
             # Builds our source code outlined above into a could assembly artifact
