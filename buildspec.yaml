@@ -18,17 +18,14 @@ phases:
       - cat README.md
   build:
     commands:
-      - git log | head -100
-      - git status
       - ls
-      - git archive --format=zip HEAD > application.zip
   #post_build:
     #commands:
       # - command
       # - command
 artifacts:
   files:
-    - application.zip
+    - buildspec.yaml
     # - location
   #name: $(date +%Y-%m-%d)
   #discard-paths: yes
