@@ -12,3 +12,4 @@ sudo .venv/bin/python3 -m pip install aws-cdk.aws_secretsmanager
 test
 test
 test
+test
