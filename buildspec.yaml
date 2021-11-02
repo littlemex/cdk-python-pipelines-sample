@@ -15,6 +15,7 @@ phases:
   pre_build:
     commands:
       - ls -lt
+      - env
       - cat README.md
   build:
     commands:
